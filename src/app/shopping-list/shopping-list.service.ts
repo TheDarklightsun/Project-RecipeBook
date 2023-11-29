@@ -1,7 +1,7 @@
 import {Injectable, OnInit} from '@angular/core';
+import {Subject} from "rxjs";
 
 import {Ingredient} from "../shared/ingredient.model";
-import {Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
