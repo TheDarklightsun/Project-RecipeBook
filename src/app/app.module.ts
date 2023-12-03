@@ -10,6 +10,7 @@ import {AppRoutingModule} from './app-routing.module';
 import {SharedModule} from './shared/shared.module';
 import {CoreModule} from './core.module';
 import * as fromApp from './store/app.reducer';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import * as fromApp from './store/app.reducer';
     HttpClientModule,
     StoreModule.forRoot(fromApp.appReducer),
     SharedModule,
-    CoreModule
+    CoreModule,
+    EffectsModule.forRoot([])
   ],
   bootstrap: [AppComponent],
   // providers: [LoggingService]

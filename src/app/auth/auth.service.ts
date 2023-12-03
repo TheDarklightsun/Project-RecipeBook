@@ -28,8 +28,7 @@ export class AuthService {
     private http: HttpClient,
     private router: Router,
     private store: Store<fromApp.AppState>
-  ) {
-  }
+  ) {}
 
   signup(email: string, password: string) {
     return this.http
